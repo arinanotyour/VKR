@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.18">
+	<ConfigVersions>
+		<Metadata name="Catalog.Контрагенты" id="0f7a12a4-ccda-4c5f-a259-7d0fdb42fa2f" configVersion="c1c6c327f214296be91d0e0782534f4bffbbf2fa"/>
+		<Metadata name="Catalog.МГС_Баллоны_" id="9a985ec8-245f-4c6e-9ed5-6455116cd941" configVersion="9f140550e38fa825090a7b0c61126d61b94047ce">
+			<Metadata name="Catalog.МГС_Баллоны_.Attribute.ТипБаллона" id="0dd6f718-0d16-4271-8e98-ce1aae92582a"/>
+			<Metadata name="Catalog.МГС_Баллоны_.Attribute.ВесТары" id="4a18df52-880f-43e9-898d-0687f1fccdc9"/>
+			<Metadata name="Catalog.МГС_Баллоны_.Attribute.Комментарий" id="a963141e-fc6f-4acc-a03c-a90ba0550cf1"/>
+			<Metadata name="Catalog.МГС_Баллоны_.Attribute.ЗаводскойНомер" id="b4ed1817-2266-4fdd-9184-3d9814ec2568"/>
+			<Metadata name="Catalog.МГС_Баллоны_.Attribute.ДатаИзготовления" id="e23a1a22-6af4-4df5-afed-da286977ac21"/>
+		</Metadata>
+		<Metadata name="Catalog.МГС_Баллоны_.Form.ФормаВыбора" id="71c23f99-418d-436e-a44a-2a5badcfb639" configVersion="47a66f369aca484781f96af64ac939abb2f9628b"/>
+		<Metadata name="Catalog.МГС_Баллоны_.Form.ФормаВыбора.Form" id="71c23f99-418d-436e-a44a-2a5badcfb639.0" configVersion="34de0fb7ec5431240e35b6f1d70da9331fd77008"/>
+		<Metadata name="Catalog.МГС_Баллоны_.Form.ФормаСписка" id="6aa7e7db-4c1c-4769-a106-e9abc2658024" configVersion="f517bf34fbbdc4ef74c7fdee55df22abf3e93ed9"/>
+		<Metadata name="Catalog.МГС_Баллоны_.Form.ФормаСписка.Form" id="6aa7e7db-4c1c-4769-a106-e9abc2658024.0" configVersion="46f68a8c7036c4919977b47b7e23c6398f1c2507"/>
+		<Metadata name="Catalog.МГС_Баллоны_.Form.ФормаЭлемента" id="8a5eb728-1a28-4f78-913d-eacc22320239" configVersion="6b0bc8330782e294cfe3a63e130c52479da02390"/>
+		<Metadata name="Catalog.МГС_Баллоны_.Form.ФормаЭлемента.Form" id="8a5eb728-1a28-4f78-913d-eacc22320239.0" configVersion="c3ba120a151f3f2d6c5dfa674f82aed535cf872d"/>
+		<Metadata name="Catalog.МГС_Баллоны_.ManagerModule" id="9a985ec8-245f-4c6e-9ed5-6455116cd941.3" configVersion="764350ad9d5cd716eed392198c841392f002e12f"/>
+		<Metadata name="Catalog.МГС_Контейнеры_" id="1a27c51f-3bfd-46f5-9c37-faa49023700e" configVersion="b0db02558b0bdabedef56aaed881c563ea139c7c">
+			<Metadata name="Catalog.МГС_Контейнеры_.Attribute.Тоннаж" id="cc871c2b-3a1c-4d0b-adba-9b20c1edde77"/>
+			<Metadata name="Catalog.МГС_Контейнеры_.Attribute.Масса" id="f8787efc-7f0a-4430-89c6-18b635e072ec"/>
+		</Metadata>
+		<Metadata name="Catalog.МГС_ТипыБаллонов_" id="ed363f96-41a0-4662-b31f-106d29ff84d8" configVersion="c3cb6a3882233e7c64f642c2416e5853bdbd1fff">
+			<Metadata name="Catalog.МГС_ТипыБаллонов_.Attribute.ФактическаяВместимостьПоВоде" id="dcbdd279-18f1-45c8-8d72-85b903badaa3"/>
+			<Metadata name="Catalog.МГС_ТипыБаллонов_.Attribute.Комментарий" id="e270746d-88e4-41be-ada5-fe626cdfd937"/>
+			<Metadata name="Catalog.МГС_ТипыБаллонов_.Attribute.ВесТары" id="ee33af02-7e74-4f12-a64c-94defcde4c44"/>
+		</Metadata>
+		<Metadata name="Catalog.МГС_ТипыБаллонов_.Form.ФормаЭлемента" id="cbcc2a02-e36f-4877-85f0-af30c7f69623" configVersion="8d509bebb224d1f66503237742d26fa6addd6d84"/>
+		<Metadata name="Catalog.МГС_ТипыБаллонов_.Form.ФормаЭлемента.Form" id="cbcc2a02-e36f-4877-85f0-af30c7f69623.0" configVersion="db8ccab9c14c9ae161e6f6ae67bcb750efb1a242"/>
+		<Metadata name="Catalog.МГС_ТипыВыпускаБаллонов_" id="c9e1a840-c56f-4262-8da4-a3972b8609ef" configVersion="9ee3f144ff8b8b3b5ecfe912e405b22c00a9ea51">
+			<Metadata name="Catalog.МГС_ТипыВыпускаБаллонов_.TabularSection.ВыпускаемаяПродукция.Attribute.ТипБаллона" id="7797cec1-5e5b-4693-9ad9-d572e55156cb"/>
+			<Metadata name="Catalog.МГС_ТипыВыпускаБаллонов_.TabularSection.ВыпускаемаяПродукция.Attribute.Номенклатура" id="f5075f9d-e565-4bdf-b87a-6fe4505eae17"/>
+			<Metadata name="Catalog.МГС_ТипыВыпускаБаллонов_.TabularSection.ВыпускаемаяПродукция" id="f5a26e42-b9bc-484f-88e8-7949a5854d50"/>
+		</Metadata>
+		<Metadata name="Catalog.МГС_ТипыВыпускаБаллонов_.Form.ФормаЭлемента" id="79551230-fb79-4cd1-8f45-37e80b178b89" configVersion="64222698233e438143f931f11e31d80387049555"/>
+		<Metadata name="Catalog.МГС_ТипыВыпускаБаллонов_.Form.ФормаЭлемента.Form" id="79551230-fb79-4cd1-8f45-37e80b178b89.0" configVersion="441571bbde613f6c9e874b3f4fffbbb65bcb53c6"/>
+		<Metadata name="Catalog.Номенклатура" id="03e60186-afaf-430f-9991-02130d294480" configVersion="059baaceb6d967fd72f3456d730df9c097443e03"/>
+		<Metadata name="Catalog.Организации" id="5618f7c9-ee39-4fb4-86c7-1e33088ada58" configVersion="e30e7ace8a2060db5f9db04a10e24a2f3fb3d0b8"/>
+		<Metadata name="Catalog.Пользователи" id="b9a4e2d4-eeed-4b41-b98b-a2254382887d" configVersion="c07dd0827496131f37c422d9b81d9a0bae6482d1"/>
+		<Metadata name="Catalog.Сотрудники" id="c95be6c2-78a2-4285-ba92-02b6495ba236" configVersion="9cfd9a951509328b9373601a48b122260dcf90a3"/>
+		<Metadata name="Catalog.ФизическиеЛица" id="30a8abff-b266-496d-a4be-4d04271dd916" configVersion="8e0805f1ea03556337ed632f496c6c5979688103"/>
+		<Metadata name="Configuration.ПодсистемаУчетБаллонов" id="98534f0d-9fce-4552-8028-3ff36ea8c0ea" configVersion="2449d3774fb95d0a67230bc5a50eaadb096e1d23"/>
+		<Metadata name="Document.МГС_БракБаллонов_" id="c767007c-5d8b-4832-a68f-69e4bac73bd8" configVersion="4e2f22cf3e6d2c0a7f878a9d84a9eb9318c484ac">
+			<Metadata name="Document.МГС_БракБаллонов_.TabularSection.Баллоны.Attribute.Причина" id="0f2f7205-16b5-4dc0-9bdd-49b21802d013"/>
+			<Metadata name="Document.МГС_БракБаллонов_.Attribute.Ответственный" id="2c481abf-41eb-42de-a94f-c0b91cb2b22f"/>
+			<Metadata name="Document.МГС_БракБаллонов_.Attribute.Организация" id="5557c2fa-0c82-4d59-90fa-7f764816add3"/>
+			<Metadata name="Document.МГС_БракБаллонов_.TabularSection.Баллоны.Attribute.Примечание" id="59398e36-f975-40f1-8b80-caa0023d64ad"/>
+			<Metadata name="Document.МГС_БракБаллонов_.TabularSection.Баллоны.Attribute.Баллон" id="6368f090-a511-4e89-96bd-a66939719a86"/>
+			<Metadata name="Document.МГС_БракБаллонов_.Attribute.Комментарий" id="63de5e2b-2e6e-47ec-b306-030e4b90d3b1"/>
+			<Metadata name="Document.МГС_БракБаллонов_.TabularSection.Баллоны.Attribute.Ответственный" id="a8ef4dd1-2c16-4024-94dd-033583c84e12"/>
+			<Metadata name="Document.МГС_БракБаллонов_.Attribute.ДокументВыпуск" id="b0ecfbb4-8cc1-4766-b189-0ed7617f1663"/>
+			<Metadata name="Document.МГС_БракБаллонов_.TabularSection.Баллоны" id="e78e13dc-5046-4442-b092-934dc5580fce"/>
+		</Metadata>
+		<Metadata name="Document.МГС_БракБаллонов_.Form.ФормаДокумента" id="e0c39b74-70ed-4c40-8e7e-d87317f1e3bd" configVersion="9b27b617b4064d8f551b525b0af6de21dd8e75ee"/>
+		<Metadata name="Document.МГС_БракБаллонов_.Form.ФормаДокумента.Form" id="e0c39b74-70ed-4c40-8e7e-d87317f1e3bd.0" configVersion="9133fd659b3e5a6e7cb5a8ea7eedce6a7f6625b7"/>
+		<Metadata name="Document.МГС_БракБаллонов_.Form.ФормаСписка" id="12edb366-2224-4df8-8de1-9984617efe59" configVersion="8db247b4833dfe55e698ae290806b2e1a7a2d54d"/>
+		<Metadata name="Document.МГС_БракБаллонов_.Form.ФормаСписка.Form" id="12edb366-2224-4df8-8de1-9984617efe59.0" configVersion="8277359247a2732feecdb0cdc4d5616367599d15"/>
+		<Metadata name="Document.МГС_БракБаллонов_.ManagerModule" id="c767007c-5d8b-4832-a68f-69e4bac73bd8.2" configVersion="ccc20cad18cc0091be17098c7099608ba7b97270"/>
+		<Metadata name="Document.МГС_БракБаллонов_.ObjectModule" id="c767007c-5d8b-4832-a68f-69e4bac73bd8.0" configVersion="5b65817b3260f14864a3c977195702a93aeff7bf"/>
+		<Metadata name="Document.МГС_БракБаллонов_.Template.СигнальныйЛист" id="4f39b3b4-8dd1-462a-9d46-39bf2ac834fd" configVersion="76693ce8e8b630d9df508605092e8832638f2387"/>
+		<Metadata name="Document.МГС_БракБаллонов_.Template.СигнальныйЛист.Template" id="4f39b3b4-8dd1-462a-9d46-39bf2ac834fd.0" configVersion="0800d0344c5e9c72913967b10184ac808fd92186"/>
+		<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_" id="d78980cc-396f-4fa9-a55f-35190d84bc7b" configVersion="849a0a19f3e4163367b9093720b4eee0b0929efd">
+			<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.Attribute.НомерАМ" id="0926364e-d60b-4116-9448-b871708f7ff0"/>
+			<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.Attribute.Комментарий" id="0ab518c4-d93d-414c-ac1e-98da5df483f2"/>
+			<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.Attribute.Контрагент" id="0cc20785-ae6f-47de-9edd-f40641d58fcd"/>
+			<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.TabularSection.Баллоны" id="0ff4b786-09f0-41f5-ad2d-3ef3b6ccf09f"/>
+			<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.Attribute.НомерЖД" id="0ff5cb7a-6ffc-4faa-a2a9-fd1d3c88d898"/>
+			<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.TabularSection.ДокументыОтгрузки.Attribute.Количество" id="576e5f4c-1c50-40b6-9372-e0d960bc2bff"/>
+			<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.TabularSection.ДокументыОтгрузки.Attribute.ТипБаллона" id="5a7e41bf-41bb-4100-8f87-84840ddc3ef8"/>
+			<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.Attribute.Организация" id="691dafc7-175d-4da7-a689-bcde1995dbed"/>
+			<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.Attribute.Приемосдатчик1" id="7028ac0d-3f89-41f6-8c7f-ee0a5d768021"/>
+			<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.Attribute.Ответственный" id="78c1f34b-c45f-4b39-af03-95d6bedc3b24"/>
+			<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.TabularSection.Баллоны.Attribute.Баллон" id="b2c7cc48-22c3-4825-83eb-c71cd45924ef"/>
+			<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.TabularSection.ДокументыОтгрузки.Attribute.ЧислятсяПоОтправочнымДокументам" id="c46be03b-410f-44d0-98ea-45b89cb6ba97"/>
+			<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.Attribute.НомерКонтейнера" id="e01ac3ab-c9e8-4ad8-9140-1a2fbfa130cf"/>
+			<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.TabularSection.ДокументыОтгрузки" id="eb103282-119f-4d64-8619-761bb20e02cf"/>
+			<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.Attribute.Мастер" id="eff59f46-aa91-49ea-8b11-f3ba48c927fe"/>
+			<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.Attribute.КоличествоБаллоновВозвращено" id="f8f06231-8a65-4813-9fd2-57817230aa79"/>
+		</Metadata>
+		<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.Form.ФормаДокумента" id="219c0016-9852-4804-ba81-1e9e2a4f6863" configVersion="83d63780c17b497107338549d54443104344f1ed"/>
+		<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.Form.ФормаДокумента.Form" id="219c0016-9852-4804-ba81-1e9e2a4f6863.0" configVersion="284e6d9e21a749d8e0cb2681bbf9d271d51e22bc"/>
+		<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.Form.ФормаСписка" id="1bdd5ca7-2e24-4fc3-b40f-1038b2bb68d5" configVersion="d245159c0e21797633a2450f910d1252ba44433a"/>
+		<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.Form.ФормаСписка.Form" id="1bdd5ca7-2e24-4fc3-b40f-1038b2bb68d5.0" configVersion="1cf1599bffbce8020108ff8bdaecab379e8ac75f"/>
+		<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.ManagerModule" id="d78980cc-396f-4fa9-a55f-35190d84bc7b.2" configVersion="517e1f941e4481cedd1a1d2a66606fa407df1b1e"/>
+		<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.ObjectModule" id="d78980cc-396f-4fa9-a55f-35190d84bc7b.0" configVersion="a1fb355fb95c0b202a04c318cbf74f8da2faab34"/>
+		<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.Template.ПриемныйАкт" id="b254b0d4-6b58-4ad7-a239-f88c5f128695" configVersion="8e8d4a39bf6100c8b329c372b6ac1304a2e332b7"/>
+		<Metadata name="Document.МГС_ВозвратБаллоновОтКонтрагентов_.Template.ПриемныйАкт.Template" id="b254b0d4-6b58-4ad7-a239-f88c5f128695.0" configVersion="29ea98b7dd594fe4120f195e31addfa4f97db591"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_" id="bd399760-1589-4172-a7a2-f5513bbc580d" configVersion="8984e786ff875d0aa54a8d49bf36974965a21327">
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Вес19" id="00f08774-e2c8-4f60-9dfc-17fdeaea3501"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Вес2" id="1bb0f8a2-b548-489d-9c60-cd06d42f96df"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Вес10" id="1fbf39b4-cbeb-405a-adec-d2c1a0457d19"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.Attribute.Ответственный" id="27a50e1b-4ea4-400b-8bf8-c3476f06bdd4"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Вес17" id="2af84d77-9529-430e-8971-5250a7e0c29b"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.Attribute.КоличествоБаллоновВВыпуске" id="37d22f16-3346-4116-8719-3ab26fd38574"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Баллон2" id="3ef8a191-590f-4f0d-bf77-9f907f0ec876"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Баллон14" id="40507e1e-62cd-429a-ae02-cf287e7a5035"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.Attribute.Комментарий" id="42f3f3c3-567d-4e38-a8da-e8cf8e9d0e6e"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Вес16" id="4aca8806-7644-4b7a-af43-b358b500c735"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Баллон3" id="4bf42721-0cef-445e-a66a-34e998422050"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Баллон16" id="5274cf78-f29b-4090-945f-403af9a01c74"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Баллон11" id="5a34b908-9d1b-4fe8-9e11-421a09031ac8"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Вес20" id="5acb4f9d-e742-4cc8-be8d-61961b9a6ac0"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.Attribute.КоличествоБаллонов" id="5f32782c-77b1-42b5-8ca7-c8b84f5b9158"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Баллон9" id="632b724f-51fe-4bf7-989c-390f6414d2fc"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Баллон6" id="63eb57e3-90bf-4100-b4cb-24ae3864b2c2"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Вес6" id="644b058d-602f-4b64-b76a-77260da71377"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Баллон5" id="7033e3ee-2f82-46f5-8491-ee4d4d12176d"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Баллон13" id="754bc310-6f33-4c1a-b6d2-1546fc72dd5a"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.КоличествоБаллоновВПартии" id="75abf8de-e1a3-4e26-9db2-7e17e3aa0491"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.НомерПартии" id="7df32aeb-b2a7-4d99-8c55-1494a38f9aec"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Вес8" id="8139c1b7-984f-4bca-adfa-cbc527e194d7"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Вес15" id="86f0fe05-983e-4af1-88c0-1a6b036fbbe0"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Вес12" id="8860051f-aa52-47fb-966f-213d86ddc2e9"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Баллон17" id="8ac7f1cc-8839-43c8-8084-e556b8e18149"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.Attribute.ТипВыпуска" id="8b05eb59-1e6a-46ca-90a1-aeadad2b8c4e"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Баллон10" id="8c405b8e-773c-4d6c-be35-28bd31c547ad"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Вес7" id="926e480d-6cd8-4802-ba5b-b1745994d253"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Вес4" id="99045b03-27a9-42f5-ad60-c1a2f437e43f"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Баллон19" id="9a539ab2-ca62-4f9b-98bd-df4533577ee3"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны" id="9cd86fc2-37e2-4117-97ad-532d3660d247"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Баллон18" id="a4a6bd0c-bd1f-46f1-a3e9-6cbd8399b9a1"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Баллон20" id="ace45a56-3853-4dce-8e85-a8b8db26e790"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Номенклатура" id="ad26d7c2-e471-4e3f-bfef-4b48d9469450"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.Attribute.Организация" id="b0984d8f-fb31-46d5-aa41-93dd78bd0788"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Колпак" id="b1af647d-c9b9-4991-bb8c-cf3829d81f40"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Вес3" id="b24a3302-920f-46ff-aeb5-ac50f742fb2e"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Вес9" id="b309e5f6-26a3-4327-9dd7-c75002305c38"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Баллон12" id="b7e3d827-f31c-4c22-8a05-7dc7f158f542"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Баллон4" id="b991179a-fbde-41c5-ac06-88a051ac3012"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Вес11" id="bdceddb2-981e-4e41-8bb9-7c52f2494a4b"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Баллон7" id="ca58406c-3f35-4d91-a7b1-e531cc02c7d9"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Баллон8" id="cf5d46af-9635-4c37-b5a0-43d95a2394ef"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.ТипБаллона" id="d3f07b5f-a5f2-46e3-b89d-77bfd2096886"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Закрыта" id="d83302b3-a239-4009-a5a4-d0742e47a599"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Кольца" id="d8aa9eb1-a3b4-4d9d-a331-aba1a4cf9280"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Баллон15" id="da28492b-dca3-44b1-b0dc-c258447839b0"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Баллон1" id="dcead255-1ed6-4442-9d78-c2c1bc6781c7"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.ДатаПартии" id="dfafb9b8-14e1-4c75-9532-293021170b42"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Вес5" id="dfb2ffde-4188-44b2-a1e0-41a6ebace1c7"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Вес14" id="e219c756-3aac-4119-a7ef-20e0a3d59fee"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Вес18" id="e286be8d-46c3-4f44-b3d1-18f6ba32da8a"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Вес13" id="f47128ff-6b97-4b9a-a853-4d507dcca9bc"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.Вес1" id="fa1a1a98-dbc4-44b1-989d-8e8f16febd61"/>
+			<Metadata name="Document.МГС_ВыпускБаллонов_.TabularSection.ПартииБаллоны.Attribute.ОтветственныйЗаПартию" id="fe555953-6ffe-4edc-afa3-0dc465279fff"/>
+		</Metadata>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Form.ФормаВыбора" id="2d2638d7-aa90-4523-b342-f0017ab71af2" configVersion="3d186eca85d49c27abeec0d737dee531f2998d76"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Form.ФормаВыбора.Form" id="2d2638d7-aa90-4523-b342-f0017ab71af2.0" configVersion="e513d147db7cf91ec03a8fc516cfee21e5e35a4a"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Form.ФормаДокумента" id="3f812875-9704-4b75-b86f-afbef5374d03" configVersion="eea1c0010dd45681c57be7301ca054a9315e564d"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Form.ФормаДокумента.Form" id="3f812875-9704-4b75-b86f-afbef5374d03.0" configVersion="93066cc84feb8e47b7c5f5fe9343cadd41e35cef"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Form.ФормаПартии" id="ab061c48-0391-4565-a25c-7b5562a0fd3a" configVersion="3562985dd13776205140847df5d4d9b983291f90"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Form.ФормаПартии.Form" id="ab061c48-0391-4565-a25c-7b5562a0fd3a.0" configVersion="63989031a3caf240382ae8bb1f2cdfa313c9ffdf"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Form.ФормаПартииТерминал" id="ecbaa56a-2154-47d1-9e89-1cf6c04c501b" configVersion="a8df30a8dad7a6fea0c1efd2ec335dcc403b5ccd"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Form.ФормаПартииТерминал.Form" id="ecbaa56a-2154-47d1-9e89-1cf6c04c501b.0" configVersion="70de90d14d89537bdfc4a4f17ef16f10b6fffce9"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Form.ФормаСписка" id="97adcbb1-da12-434d-b9b3-824b4ab37dcf" configVersion="f06a47c57485f3484b75ec696d8a7b844840c9fb"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Form.ФормаСписка.Form" id="97adcbb1-da12-434d-b9b3-824b4ab37dcf.0" configVersion="770b6eee8ab252a62995ea7a46e8936a52d9da91"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.ManagerModule" id="bd399760-1589-4172-a7a2-f5513bbc580d.2" configVersion="2f514f2e12d1774c6a645ed4833f5b7fdd17944d"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.ObjectModule" id="bd399760-1589-4172-a7a2-f5513bbc580d.0" configVersion="7a091154617af3680e7c8062df583b341b454793"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Template.ОтчетПоВыпуску" id="aee1c1a7-cbc6-4526-833c-9297ec33d0ac" configVersion="ea38f523eeabfe3f9bcc9523c44a728f285e1af2"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Template.ОтчетПоВыпуску.Template" id="aee1c1a7-cbc6-4526-833c-9297ec33d0ac.0" configVersion="15bf7fdd0b449d6d43cf19bf91fbb100643359b2"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Template.ОтчетПоПартии" id="7e60eafa-6345-49bc-8f9c-96536f1d7a65" configVersion="94f91fb8a9bf97b815c84d7e2ca02becf458077a"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Template.ОтчетПоПартии.Template" id="7e60eafa-6345-49bc-8f9c-96536f1d7a65.0" configVersion="c80b2197bc41f7dcd80494e44b586413d455758b"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Template.Партия" id="65acec7d-08f7-4461-a95c-77c86f238d51" configVersion="1933a6da1e6995f5efe739ee8d377e7a1409af48"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Template.Партия.Template" id="65acec7d-08f7-4461-a95c-77c86f238d51.0" configVersion="b52e5abac1b0647773a6aa4d5fb082eacbfe5c1e"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Template.Партия1" id="b895818e-1524-4300-9aca-79c51c14b81e" configVersion="32e3d65229301ce435ebfd64cbda0540ad6edf10"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Template.Партия1.Template" id="b895818e-1524-4300-9aca-79c51c14b81e.0" configVersion="b52e5abac1b0647773a6aa4d5fb082eacbfe5c1e"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Template.ПартияМ" id="e67efe67-97d9-4277-92da-840772a33fe3" configVersion="b3f8ffd7ba038c6f262f396dc19346faed8de967"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Template.ПартияМ.Template" id="e67efe67-97d9-4277-92da-840772a33fe3.0" configVersion="c9786c19335adb2f9c699cb88273c6ae8dcc1cbe"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Template.ПартияМ1" id="a31dd739-d0a3-4255-bd4f-ae12b0a82824" configVersion="e808fff3cc9cec89de825ab62d5e08f4fe6bb3cf"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Template.ПартияМ1.Template" id="a31dd739-d0a3-4255-bd4f-ae12b0a82824.0" configVersion="c9786c19335adb2f9c699cb88273c6ae8dcc1cbe"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Template.ПартияУкраина" id="0776daa9-adde-4443-a6bd-2ecde68284da" configVersion="6e14b6496507831e547a416b10322c389d22c5da"/>
+		<Metadata name="Document.МГС_ВыпускБаллонов_.Template.ПартияУкраина.Template" id="0776daa9-adde-4443-a6bd-2ecde68284da.0" configVersion="f487ca90d89a257e8ba7e934534016d724322b50"/>
+		<Metadata name="Document.МГС_ГидроиспытаниеБаллонов_" id="8ccd978f-469b-449d-b8fe-b9cc45e650c7" configVersion="b0709b903b6e104b98d840c7fcd73cde611143c1">
+			<Metadata name="Document.МГС_ГидроиспытаниеБаллонов_.Attribute.Ответственный" id="13551042-6635-4491-a1e4-d12dc74980fe"/>
+			<Metadata name="Document.МГС_ГидроиспытаниеБаллонов_.Attribute.Организация" id="993a265e-8c44-4810-b6ca-7f243f4e77e7"/>
+			<Metadata name="Document.МГС_ГидроиспытаниеБаллонов_.Attribute.Комментарий" id="bfa905b1-d7f5-46c5-84fc-e3f4e83664bb"/>
+			<Metadata name="Document.МГС_ГидроиспытаниеБаллонов_.TabularSection.Баллоны" id="e47ded15-578c-4f2b-b1f2-22fc0a715f31"/>
+			<Metadata name="Document.МГС_ГидроиспытаниеБаллонов_.TabularSection.Баллоны.Attribute.Баллон" id="f55dd6fe-97f9-4773-b7ea-21d94c32e892"/>
+		</Metadata>
+		<Metadata name="Document.МГС_ГидроиспытаниеБаллонов_.Form.ФормаДокумента" id="5a0999e5-bff2-4355-9bf1-c8cf54c3d2ee" configVersion="81ce1a1bb82f9329dab286e5abe44fa325fa244c"/>
+		<Metadata name="Document.МГС_ГидроиспытаниеБаллонов_.Form.ФормаДокумента.Form" id="5a0999e5-bff2-4355-9bf1-c8cf54c3d2ee.0" configVersion="30a8889ef854bcad3614cfac3b211de831d75007"/>
+		<Metadata name="Document.МГС_ГидроиспытаниеБаллонов_.Form.ФормаСписка" id="be587da3-4651-4dab-a8ee-2d8a61091fde" configVersion="17088e63672dffe46037bf25e2a95249fc964b80"/>
+		<Metadata name="Document.МГС_ГидроиспытаниеБаллонов_.Form.ФормаСписка.Form" id="be587da3-4651-4dab-a8ee-2d8a61091fde.0" configVersion="25e81656351e5595558f5c7bd67d04cd73a31c07"/>
+		<Metadata name="Document.МГС_ГидроиспытаниеБаллонов_.ManagerModule" id="8ccd978f-469b-449d-b8fe-b9cc45e650c7.2" configVersion="25110b8dc87f351a3fad9b204da5561e996b742b"/>
+		<Metadata name="Document.МГС_ГидроиспытаниеБаллонов_.ObjectModule" id="8ccd978f-469b-449d-b8fe-b9cc45e650c7.0" configVersion="f5554239800613892f012f1b26fd675ae0e5a83e"/>
+		<Metadata name="Document.МГС_ГидроиспытаниеБаллонов_.Template.Журнал" id="4be5e81c-1fdd-43c8-a212-c34cd582e388" configVersion="b4af3e1218d88d63d4066324e1ac32ab875cb7a3"/>
+		<Metadata name="Document.МГС_ГидроиспытаниеБаллонов_.Template.Журнал.Template" id="4be5e81c-1fdd-43c8-a212-c34cd582e388.0" configVersion="f38bdf12cfabdce4f9a3a7d9b5d0bad3982d3705"/>
+		<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_" id="1efc843e-7ecc-4858-9ef3-d54c63889644" configVersion="3358c9131a6b838f34d507c9cc967174e1ffb7a3">
+			<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.Attribute.ОтгрузкаБаллонов" id="0016b736-1e68-4a68-9012-40fe128c15b3"/>
+			<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.Attribute.НомерПломбы" id="31c07f25-a50e-44c6-8d8e-3c0ab2d056d7"/>
+			<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.Attribute.Ответственный" id="4584291f-f6c8-471e-9a8e-366822a27c79"/>
+			<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.Attribute.ЩитДеревянныйКоличество" id="521ac3d1-ff49-486d-8e43-2956f88dc3b7"/>
+			<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.Attribute.НомерОттиска" id="53130ae5-4d28-4d1c-a2a7-705a79ccddab"/>
+			<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.Attribute.Организация" id="7ed3aa38-00d8-4d63-97e7-5c2ae8b1350b"/>
+			<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.Attribute.КодВладельцаКонтейнера" id="81f43f08-d5e0-4fca-ba38-d66f243146c5"/>
+			<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.Attribute.КодПлательщика12" id="890504e9-99e4-41e3-b4c4-ca1032551485"/>
+			<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.Attribute.НомерКонтейнера" id="8e1232bf-7d27-4f42-9bf7-3ff983051655"/>
+			<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.Attribute.ВидОттиска" id="99bc142e-b643-4de8-b330-d90db8e40663"/>
+			<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.Attribute.ВидОтгрузки" id="a136f9c5-908f-48f0-ad2c-49a9c59b1334"/>
+			<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.Attribute.Контейнер" id="bad507de-10f7-4836-a31b-463914d8b9ef"/>
+			<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.Attribute.КодПлательщика7" id="c570ccb3-25af-48cc-a3ac-b49f92512fdd"/>
+			<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.Attribute.Грузополучатель" id="c7b1f8ed-f948-49c9-a19e-fa425d044d8c"/>
+			<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.Attribute.ДатаВозвратаТары" id="d284a807-0812-4866-bc8a-4bffbbe6cc70"/>
+		</Metadata>
+		<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.Form.ФормаДокумента" id="b5c22cde-fe16-465b-8d16-c54b4b55d900" configVersion="2ecff5f51b7e1e2d1290d8409a92f0cd9ae6634d"/>
+		<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.Form.ФормаДокумента.Form" id="b5c22cde-fe16-465b-8d16-c54b4b55d900.0" configVersion="d76ae62a346abfa4a1bbfbc9976b8643c2e6e05c"/>
+		<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.Form.ФормаСписка" id="9ae3663e-3f07-41d0-b83a-c14a9fc25e7a" configVersion="4436c2c0919ec9ed0af26c2fb28eabac70c72604"/>
+		<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.Form.ФормаСписка.Form" id="9ae3663e-3f07-41d0-b83a-c14a9fc25e7a.0" configVersion="f48887f4b60f5e6ec703b1e37f4a34a6d951b8bb"/>
+		<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.ManagerModule" id="1efc843e-7ecc-4858-9ef3-d54c63889644.2" configVersion="92c10b3107edfbbfaa5540c50e693689f7479060"/>
+		<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.ObjectModule" id="1efc843e-7ecc-4858-9ef3-d54c63889644.0" configVersion="242febc8d1cb7200fed664c70017e1512fbcb02b"/>
+		<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.Template.ЖелезнодорожнаяНакладная" id="eb4dcf79-faa4-433d-8f6d-dcee97f55df8" configVersion="32ae4b32694972fb67f2c319d26635837ac5df92"/>
+		<Metadata name="Document.МГС_НакладнаяЖелезнодорожнымТранспортом_.Template.ЖелезнодорожнаяНакладная.Template" id="eb4dcf79-faa4-433d-8f6d-dcee97f55df8.0" configVersion="f9320ed9ae53f0645c91bf1f7cdb799f829ac404"/>
+		<Metadata name="Document.МГС_ОтгрузкаБаллонов_" id="fccbd826-9ca7-4be9-b4f1-e5301fbce9f8" configVersion="f0dbaa2e059bb13712482529769d832b2166ae79">
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Attribute.НомерОттиска" id="03946733-2e6a-4931-a919-5f02f69f62c8"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Attribute.КодПлательщика12" id="0f2b91f6-ffd5-40d0-ad2b-48ad491c7166"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Attribute.Реализация" id="0f2e537f-e94f-4b09-8b67-5ed2c9dbde50"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Attribute.Номенклатура" id="105b7238-cc4c-4f72-83a0-236e047747f2"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.TabularSection.ПартииБаллоны.Attribute.Выпуск" id="3d9a7b89-f1eb-42fc-aa95-eb166177bc42"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Attribute.Организация" id="42cfabcf-04c9-42f2-aee3-05096c9c6c7e"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Attribute.КодПлательщика7" id="4d1d9a9f-bab7-472a-b628-fc329d42ca91"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Attribute.Подписант2" id="4e14debb-f712-4433-9cdb-d0d835d247d7"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Attribute.НомерКонтейнера" id="54994879-8f76-4cdd-b5d7-820b4ecfa819"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Attribute.Грузополучатель" id="55881091-e8fe-4906-86dc-a0697c204d90"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Attribute.ВидОтгрузки" id="5811180d-2ac5-4b62-884b-bb20e061f598"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Attribute.Комментарий" id="593d84f2-f590-4681-aea2-51d9ff6c316b"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Attribute.ЩитДеревянныйКоличество" id="5d5b9f1d-0da9-41bd-a71c-ed6610679eb5"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Attribute.Ответственный" id="63c8bdc5-9ed9-463b-96c1-fc33aeaf1c21"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Attribute.ДатаВозвратаТары" id="69f75ade-5f9a-4617-9b16-8c8405a41f00"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.TabularSection.ПартииБаллоныРезервированные.Attribute.Партия" id="718edd06-4ab5-45a7-8cd2-5989507272e5"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Attribute.КоличествоБаллоновВОтгрузке" id="71d670b8-cc72-4558-ba3c-11b5b657d07a"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.TabularSection.ПартииБаллоны.Attribute.Баллон" id="8bb86cfb-54e7-419c-bae0-c8326fd45a08"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Attribute.ВидОттиска" id="9fd9ed61-114c-4b17-b368-551f62987b52"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.TabularSection.ПартииБаллоны" id="9ff7be69-2e2a-4e76-9392-4b566f457260"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Attribute.Контрагент" id="ad3bf26f-d6f9-45da-be51-0a3237761dda"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Attribute.Контейнер" id="b6d215db-bd50-482e-9576-db4343a97a13"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Attribute.Подписант3" id="c2f63f9a-96e4-4ada-b0ba-14d50885f7c4"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.TabularSection.ПартииБаллоныРезервированные" id="cf69f331-44d9-4958-b609-bde408500171"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Attribute.НомерПломбы" id="d0f1e1bd-be46-4c6e-9980-dde0d02483f0"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Attribute.КодВладельцаКонтейнера" id="d76661de-33e6-42f0-821b-82e87fd05e00"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.TabularSection.ПартииБаллоныРезервированные.Attribute.Выпуск" id="db587d08-c46a-47e3-bc0f-1a954e06ba0c"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.TabularSection.ПартииБаллоны.Attribute.Партия" id="ddfad26d-d0f9-435e-9a2f-91775559b34c"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.TabularSection.ПартииБаллоныРезервированные.Attribute.Баллон" id="e8cca2ca-7e5c-4326-b40d-d5b333216887"/>
+			<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Attribute.Подписант1" id="e9842bf6-ef28-4065-b73d-ad555dd699e9"/>
+		</Metadata>
+		<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Form.ФормаВыбора" id="2fba74e7-077c-49f6-a878-1d5d5d767aa1" configVersion="cf26e2f48167b9011231979cfe0c2a31c82a0095"/>
+		<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Form.ФормаВыбора.Form" id="2fba74e7-077c-49f6-a878-1d5d5d767aa1.0" configVersion="2d9715f3717c897bad513f5ffab5308f4c196c90"/>
+		<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Form.ФормаДокумента" id="55867529-51a5-4a2d-b96c-4b65ae4cf8bd" configVersion="c310d3e501e18ce65742a5cebc84af66d9aebdb7"/>
+		<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Form.ФормаДокумента.Form" id="55867529-51a5-4a2d-b96c-4b65ae4cf8bd.0" configVersion="1c13dd5b8fa26ff8e82fd70de8fd3a272d1a5003"/>
+		<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Form.ФормаПартий" id="3ee335e0-b791-4c84-ac64-1961adb1d19b" configVersion="06f7f293810f000a00225146cea5b2d7d9af7112"/>
+		<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Form.ФормаПартий.Form" id="3ee335e0-b791-4c84-ac64-1961adb1d19b.0" configVersion="17eeab2e0559deb7056c864735ffaf5cc59e2cf1"/>
+		<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Form.ФормаСписка" id="9f76d931-a95e-466b-8b54-e6ce2ece34aa" configVersion="190a4da416192fbad25f9c0984b5bf4686b814bb"/>
+		<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Form.ФормаСписка.Form" id="9f76d931-a95e-466b-8b54-e6ce2ece34aa.0" configVersion="a84fe5bdae4b5dd1956f36dac3f6cb3039aca2d7"/>
+		<Metadata name="Document.МГС_ОтгрузкаБаллонов_.ManagerModule" id="fccbd826-9ca7-4be9-b4f1-e5301fbce9f8.2" configVersion="4b75c26a51e222e54478234d0e54bd04b5972f75"/>
+		<Metadata name="Document.МГС_ОтгрузкаБаллонов_.ObjectModule" id="fccbd826-9ca7-4be9-b4f1-e5301fbce9f8.0" configVersion="86e67203221ce76719785bbbf070836bfe0cd296"/>
+		<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Template.НакладнаяЖД" id="d101d99a-7512-4aa0-9146-c8792d9af753" configVersion="35287a3901f154b213a5bf5378cb6b6897ce9d0a"/>
+		<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Template.НакладнаяЖД.Template" id="d101d99a-7512-4aa0-9146-c8792d9af753.0" configVersion="84b75eaa95e121ad0840bc61f5b57cef48e78b8f"/>
+		<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Template.Протокол" id="d7329f5a-cab9-4b39-a6a2-7ec86a2eca76" configVersion="eaf8e3b6f8e91636521036da60ad8fb5ba6b53e8"/>
+		<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Template.Протокол.Template" id="d7329f5a-cab9-4b39-a6a2-7ec86a2eca76.0" configVersion="d16df4fd9959eeb3378c2f640707c26e900bb115"/>
+		<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Template.Сертификат" id="b6548ed1-5b3c-4cb3-87be-d9f6282a5185" configVersion="4c198ecf811f282a71068565a9fe31af0f9011d7"/>
+		<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Template.Сертификат.Template" id="b6548ed1-5b3c-4cb3-87be-d9f6282a5185.0" configVersion="c857ed653cb7f81acc932d89cb7ba0e4f2495e68"/>
+		<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Template.Сертификат_102024" id="9c030b6b-2ff8-418a-af81-6520e565d7eb" configVersion="13f6eef6212d35c928a30bd7b46a72458f27124d"/>
+		<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Template.Сертификат_102024.Template" id="9c030b6b-2ff8-418a-af81-6520e565d7eb.0" configVersion="d7f6d9da3b1b1c5d10165ec5cb3066d77a996af7"/>
+		<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Template.СертификатНаТару" id="0ac429b7-7533-406d-83c8-637fe36c4061" configVersion="8691a09731cfc5c57904f556f49f2157478bd0a3"/>
+		<Metadata name="Document.МГС_ОтгрузкаБаллонов_.Template.СертификатНаТару.Template" id="0ac429b7-7533-406d-83c8-637fe36c4061.0" configVersion="456c246d187474ecb9c21b994b5d47ad0c992deb"/>
+		<Metadata name="Document.МГС_РезультатАнализа_" id="64e5028b-bead-4651-9e92-5cbb7dca03fc" configVersion="5e4478ef0176f3ca7b0089b5fba84a1ae277222c">
+			<Metadata name="Document.МГС_РезультатАнализа_.Attribute.Ответственный" id="0638871e-94e9-49b8-b624-0183e638a88f"/>
+			<Metadata name="Document.МГС_РезультатАнализа_.Attribute.Организация" id="202e8e21-7330-4b57-a8f8-458969c4fc6f"/>
+			<Metadata name="Document.МГС_РезультатАнализа_.TabularSection.Сертификация.Attribute.Баллон" id="335f82e1-7722-4037-9a67-d2d219aad744"/>
+			<Metadata name="Document.МГС_РезультатАнализа_.TabularSection.Сертификация.Attribute.ДатаАнализа" id="65e876de-81c0-4102-85b5-44c508c0a976"/>
+			<Metadata name="Document.МГС_РезультатАнализа_.TabularSection.Сертификация.Attribute.Кислотность" id="70b756cf-fde9-49b6-9c4f-c35ee5c52c79"/>
+			<Metadata name="Document.МГС_РезультатАнализа_.TabularSection.Сертификация.Attribute.СО" id="7eb71c95-adc3-46b5-9143-3946cc0d4acd"/>
+			<Metadata name="Document.МГС_РезультатАнализа_.TabularSection.Сертификация.Attribute.ОксидыАзота" id="8a58c412-a052-4137-826a-9b9f2fbab2bc"/>
+			<Metadata name="Document.МГС_РезультатАнализа_.TabularSection.Партии.Attribute.НомерПартии" id="b1b85581-4a9f-40fd-b04b-4d349ded8d3c"/>
+			<Metadata name="Document.МГС_РезультатАнализа_.Attribute.ОтветственныйЗаАнализ" id="b62b658c-3580-48df-bc0b-4cce38f9ace7"/>
+			<Metadata name="Document.МГС_РезультатАнализа_.TabularSection.Партии" id="b8b1cf21-cb02-4c6b-b758-b83ff4e99827"/>
+			<Metadata name="Document.МГС_РезультатАнализа_.TabularSection.Сертификация.Attribute.НеконденсирующиесяГазы" id="be68c009-b843-4944-bd8c-956461e72df4"/>
+			<Metadata name="Document.МГС_РезультатАнализа_.TabularSection.Сертификация.Attribute.Галогены" id="ce27a083-0f42-40dd-b47a-bd90d71069bc"/>
+			<Metadata name="Document.МГС_РезультатАнализа_.Attribute.ДокументВыпуск" id="d0c206f0-08c8-4239-9adc-d6db27b1100b"/>
+			<Metadata name="Document.МГС_РезультатАнализа_.TabularSection.Сертификация.Attribute.ВодяныеПары" id="dc8122d0-a451-42d4-a3ac-fa750e36356d"/>
+			<Metadata name="Document.МГС_РезультатАнализа_.TabularSection.Сертификация.Attribute.СО2" id="dff75ca0-8ef8-4a24-a09e-6fb13a9d9f35"/>
+			<Metadata name="Document.МГС_РезультатАнализа_.TabularSection.Сертификация" id="e7e77f89-42a3-4b0a-bc92-761e4c37757f"/>
+			<Metadata name="Document.МГС_РезультатАнализа_.Attribute.Комментарий" id="ebbaa120-0202-4f05-add8-c2d0412350b4"/>
+			<Metadata name="Document.МГС_РезультатАнализа_.TabularSection.Сертификация.Attribute.ОсновноеВещество" id="f632d1a4-4ae3-4eeb-b93b-711df1cac663"/>
+		</Metadata>
+		<Metadata name="Document.МГС_РезультатАнализа_.Form.ФормаДокумента" id="c8ef1801-5b5d-4d0c-993f-e1df0d4b9615" configVersion="2db112b5a18bad624622979bfafab4abc6795e06"/>
+		<Metadata name="Document.МГС_РезультатАнализа_.Form.ФормаДокумента.Form" id="c8ef1801-5b5d-4d0c-993f-e1df0d4b9615.0" configVersion="37d406167c2779e3a8e466cd3a06ac19c5f3985b"/>
+		<Metadata name="Document.МГС_РезультатАнализа_.Form.ФормаСписка" id="adde2927-8001-4c35-b2d0-164f6a7e6e7a" configVersion="dded34f17e5096bc4ecd6ad8f321641365e1194b"/>
+		<Metadata name="Document.МГС_РезультатАнализа_.Form.ФормаСписка.Form" id="adde2927-8001-4c35-b2d0-164f6a7e6e7a.0" configVersion="802bc4faa1eb26977e258142a9ce46bda836bc0f"/>
+		<Metadata name="Document.МГС_РезультатАнализа_.ManagerModule" id="64e5028b-bead-4651-9e92-5cbb7dca03fc.2" configVersion="5d1b0cd4bcc10c61bd2522bb85d18020aa9f9a02"/>
+		<Metadata name="Document.МГС_РезультатАнализа_.ObjectModule" id="64e5028b-bead-4651-9e92-5cbb7dca03fc.0" configVersion="f29d87a3634bc2f356f09bcf12d325a92189dbbc"/>
+		<Metadata name="Document.МГС_РезультатАнализа_.Template.Журнал" id="456340be-7d2e-4985-8265-00e2af0b5e94" configVersion="0f46201843874fb7ba7d48d820d2ec4d0ad29824"/>
+		<Metadata name="Document.МГС_РезультатАнализа_.Template.Журнал.Template" id="456340be-7d2e-4985-8265-00e2af0b5e94.0" configVersion="f9bd616bd041fc2a0e4c6a4f72c59ba1132160c1"/>
+		<Metadata name="Document.МГС_РезультатАнализа_.Template.ПаспортКачества" id="591754b1-b40a-46e2-9b40-2b4d96609b8f" configVersion="e562a7d92df7d1821c26376fc277e8617cad8331"/>
+		<Metadata name="Document.МГС_РезультатАнализа_.Template.ПаспортКачества.Template" id="591754b1-b40a-46e2-9b40-2b4d96609b8f.0" configVersion="a2c838013d7409b1c045c1199fcbbf31767f3584"/>
+		<Metadata name="Document.МГС_РезультатАнализа_.Template.ПереченьБаллонов" id="bad8f166-fe4b-4e21-bcfc-1b8ddf91e4f6" configVersion="7aaf9d3e1c49cb27b2a4935a1fd7157ac53d68a4"/>
+		<Metadata name="Document.МГС_РезультатАнализа_.Template.ПереченьБаллонов.Template" id="bad8f166-fe4b-4e21-bcfc-1b8ddf91e4f6.0" configVersion="abcafd448812e2ae8e73dce2ea8b934b8e616875"/>
+		<Metadata name="Document.МГС_РезультатАнализа_.Template.РазрешениеНаВыпуск" id="0fd55b09-7556-4175-aa09-2d8ab855e292" configVersion="e074224bbf9d6fed55317312e002eaddea91e238"/>
+		<Metadata name="Document.МГС_РезультатАнализа_.Template.РазрешениеНаВыпуск.Template" id="0fd55b09-7556-4175-aa09-2d8ab855e292.0" configVersion="97c37688606a786d85dec3a45a057c0fd9079268"/>
+		<Metadata name="Document.РеализацияТоваровУслуг" id="5903b697-4ce8-44b3-811d-7b1991c68d57" configVersion="cee13aa405ed949b74cb4fd8b434fe5dfffd3d9c"/>
+		<Metadata name="Enum.МГС_СостояниеБаллона_" id="72a88a22-4d78-4972-9d28-425329d2a90e" configVersion="a4d16e3b61e722fadd809a323885718538ff71d2">
+			<Metadata name="Enum.МГС_СостояниеБаллона_.EnumValue.Возвращено" id="0c92c1a5-7d1b-4472-85f9-e22d561af481"/>
+			<Metadata name="Enum.МГС_СостояниеБаллона_.EnumValue.Отгружено" id="21718034-0d9b-4dd6-83bd-20e5dd6e7fcb"/>
+			<Metadata name="Enum.МГС_СостояниеБаллона_.EnumValue.Резервировано" id="25e684ed-3963-4935-b581-35067819b758"/>
+			<Metadata name="Enum.МГС_СостояниеБаллона_.EnumValue.Забракованно" id="9e90cfab-b676-407a-97d7-740c79a48ae5"/>
+			<Metadata name="Enum.МГС_СостояниеБаллона_.EnumValue.Выпущено" id="b2e89bb4-dc72-409d-8449-b9f3c82c47ed"/>
+		</Metadata>
+		<Metadata name="InformationRegister.МГС_АттестацияБаллонов_" id="7b8ad477-62ba-4120-9d7a-6ca89f601448" configVersion="2f44154ef778da5a65ef0a69767c85b87aabdaa5">
+			<Metadata name="InformationRegister.МГС_АттестацияБаллонов_.Attribute.ПроводившийАттестацию" id="2f4b1374-6cda-4fd0-967b-9397caa9490e"/>
+			<Metadata name="InformationRegister.МГС_АттестацияБаллонов_.Resource.ДатаСледующейАттестации" id="4a781a41-e458-4a70-a663-44911c2cd82e"/>
+			<Metadata name="InformationRegister.МГС_АттестацияБаллонов_.Dimension.Баллон" id="6ed31187-21e8-4bc8-b54f-1ada9ef31731"/>
+		</Metadata>
+		<Metadata name="InformationRegister.МГС_ВыпускБаллонов_" id="8c37aea8-31d8-4c00-a254-630c02dcefa7" configVersion="7c4e778eaf575c56efb676d29a19108cf047a778">
+			<Metadata name="InformationRegister.МГС_ВыпускБаллонов_.Resource.Номенклатура" id="3065c652-055b-44ab-8393-34548f0f0715"/>
+			<Metadata name="InformationRegister.МГС_ВыпускБаллонов_.Resource.Партия" id="3588df85-54eb-474e-af8b-2ea724b971ad"/>
+			<Metadata name="InformationRegister.МГС_ВыпускБаллонов_.Resource.Выпуск" id="48ee42c3-74f1-4b5b-b7f3-a6ef69506a49"/>
+			<Metadata name="InformationRegister.МГС_ВыпускБаллонов_.Dimension.Баллон" id="f2ab1c03-1d1d-4dd5-bcd4-7c961947af00"/>
+			<Metadata name="InformationRegister.МГС_ВыпускБаллонов_.Resource.Состояние" id="fe788815-392b-45ad-b82d-34b4cc3fe1bc"/>
+		</Metadata>
+		<Metadata name="InformationRegister.МГС_РезультатАнализа_" id="ff5f5cab-94b9-41bd-a8c7-5a4113f3709f" configVersion="b7a866de7f529bc0365109aa8b363070f849a440">
+			<Metadata name="InformationRegister.МГС_РезультатАнализа_.Dimension.Партия" id="4664a3c4-914e-4431-ab8a-127da465ce2d"/>
+			<Metadata name="InformationRegister.МГС_РезультатАнализа_.Dimension.Выпуск" id="50c30882-3572-4fc3-91af-64ec3a7061f2"/>
+		</Metadata>
+		<Metadata name="Language.Русский" id="9534f389-b207-4d76-ac82-4a29e9f01188" configVersion="be5d985de2b552967cd307b7e9524db1f81ca85b"/>
+		<Metadata name="Report.МГС_КарточкаПоБаллону" id="cbaa307c-d7bc-4c26-b9c9-9dc4d0aef9ea" configVersion="4aa501b499b4e1811aca1f9d985ba345927c5185"/>
+		<Metadata name="Report.МГС_КарточкаПоБаллону.Form.ФормаОтчета" id="10b59a3f-df83-4178-a826-a68a129ce97f" configVersion="7670340a5c108081264f25d92a5c4f7e6024ff75"/>
+		<Metadata name="Report.МГС_КарточкаПоБаллону.Form.ФормаОтчета.Form" id="10b59a3f-df83-4178-a826-a68a129ce97f.0" configVersion="3273ac56cecb57b107c9ab36451c75b5163265fa"/>
+		<Metadata name="Report.МГС_КарточкаПоБаллону.Template.ОсновнаяСхемаКомпоновкиДанных" id="796aa238-bb7a-4e23-9f7e-db067700adc5" configVersion="f2ad77311f72a078d0c63fe4026a414c24d12dea"/>
+		<Metadata name="Report.МГС_КарточкаПоБаллону.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="796aa238-bb7a-4e23-9f7e-db067700adc5.0" configVersion="792c87b8abf0630139456e9e8967e89d7f33498d"/>
+		<Metadata name="Report.МГС_ОтчетПоБаллонамГотовымКОтгрузке" id="e7dd297a-604b-4177-a673-0181dce4e530" configVersion="57533fd7d4a475c06ac42371631bf8ece0c78029"/>
+		<Metadata name="Report.МГС_ОтчетПоБаллонамГотовымКОтгрузке.Form.ФормаОтчета" id="d23d8005-844f-4959-8358-281af94f96cd" configVersion="96b9e17d20c35ee35baa496f629535c4fd4fbaae"/>
+		<Metadata name="Report.МГС_ОтчетПоБаллонамГотовымКОтгрузке.Form.ФормаОтчета.Form" id="d23d8005-844f-4959-8358-281af94f96cd.0" configVersion="5febeac172a0a27abd4e0787390df367bcd30fa3"/>
+		<Metadata name="Report.МГС_ОтчетПоБаллонамГотовымКОтгрузке.Form.ФормаСсылка" id="fe2cfd6a-dbb2-45e2-be1a-9bc603bbbe04" configVersion="dbf9d0f335722c955762f6a4cb1e75aa2e74c7bf"/>
+		<Metadata name="Report.МГС_ОтчетПоБаллонамГотовымКОтгрузке.Form.ФормаСсылка.Form" id="fe2cfd6a-dbb2-45e2-be1a-9bc603bbbe04.0" configVersion="a54cbd1c951f2ede691b99ec9283fee5dc814ccd"/>
+		<Metadata name="Report.МГС_ОтчетПоБаллонамГотовымКОтгрузке.Template.ОсновнаяСхемаКомпоновкиДанных" id="30aaabf3-fcd7-4e51-ad89-123afe1f13b9" configVersion="ba374e04b0c553c102caebd9d83c78b50e46d9fa"/>
+		<Metadata name="Report.МГС_ОтчетПоБаллонамГотовымКОтгрузке.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="30aaabf3-fcd7-4e51-ad89-123afe1f13b9.0" configVersion="09d91739165ad2156d71c8e449789b2a2fb4238b"/>
+		<Metadata name="Report.МГС_ОтчетПоБаллонамУКонтрагентов" id="ca3adc30-b3b2-4c68-a885-d857b4fad5d8" configVersion="9a9ac04da99ee134a26ff46a470c4114b96ea7ad"/>
+		<Metadata name="Report.МГС_ОтчетПоБаллонамУКонтрагентов.Form.ФормаОтчета" id="e1842f68-fcce-485b-ab74-2a32d6b7bd0d" configVersion="ed30d1f21ea39d675a878bb7b76d52dab50c1921"/>
+		<Metadata name="Report.МГС_ОтчетПоБаллонамУКонтрагентов.Form.ФормаОтчета.Form" id="e1842f68-fcce-485b-ab74-2a32d6b7bd0d.0" configVersion="1e3e2d997341a4262d85018117dae44c5b35e9b8"/>
+		<Metadata name="Report.МГС_ОтчетПоБаллонамУКонтрагентов.Template.ОсновнаяСхемаКомпоновкиДанных" id="2f7b0f27-6fb8-4362-bd69-15ccf2054e35" configVersion="02f46760413a67144cbd32440c2a78da2e8124eb"/>
+		<Metadata name="Report.МГС_ОтчетПоБаллонамУКонтрагентов.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="2f7b0f27-6fb8-4362-bd69-15ccf2054e35.0" configVersion="c71ad77f6089da676e6432d7ecfbd970bae4fc85"/>
+		<Metadata name="Report.МГС_ОтчетПоВозвратуБаллоновКонтрагентами" id="9e4644e7-1024-4220-b4e3-b1ebfa1e2c49" configVersion="80fb28d219110f333b0b8b948737bc0f3423b9d9"/>
+		<Metadata name="Report.МГС_ОтчетПоВозвратуБаллоновКонтрагентами.Form.ФормаОтчета" id="5bb067bc-168d-4a25-955a-5098bd59d954" configVersion="dbd1e8465043ac40e00f7077d95d4eb0e307231d"/>
+		<Metadata name="Report.МГС_ОтчетПоВозвратуБаллоновКонтрагентами.Form.ФормаОтчета.Form" id="5bb067bc-168d-4a25-955a-5098bd59d954.0" configVersion="4455604f8260f0ad166b9216c37843512ba981a9"/>
+		<Metadata name="Report.МГС_ОтчетПоВозвратуБаллоновКонтрагентами.Template.ОсновнаяСхемаКомпоновкиДанных" id="6210c79c-4b6a-46b8-9e3a-2a6916607154" configVersion="28d84080f1e830f744b8b27636d8900bef75be3f"/>
+		<Metadata name="Report.МГС_ОтчетПоВозвратуБаллоновКонтрагентами.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="6210c79c-4b6a-46b8-9e3a-2a6916607154.0" configVersion="cd931dbadccb8588e1ccb15087b1188b05400bc8"/>
+		<Metadata name="Report.МГС_ОтчетПоВыпускуБаллонов" id="19ee7906-11c9-4b17-ab7c-8348e52f7723" configVersion="30ad1b3830dd9658101a387180c8d0891d72eb6e"/>
+		<Metadata name="Report.МГС_ОтчетПоВыпускуБаллонов.Form.ФормаОтчета" id="0a4571f9-090f-4d18-bd57-77d842de4507" configVersion="63edcaecdc936052be9e5cfa340a81e5d030dc6b"/>
+		<Metadata name="Report.МГС_ОтчетПоВыпускуБаллонов.Form.ФормаОтчета.Form" id="0a4571f9-090f-4d18-bd57-77d842de4507.0" configVersion="59e83fb2c0c1243d4db4ca51b3e40b514ac742eb"/>
+		<Metadata name="Report.МГС_ОтчетПоВыпускуБаллонов.Form.ФормаСсылка" id="4d7c48c5-7107-42ac-b542-16ccdd05c6b9" configVersion="c974e96928c4c797e10aa04306f47f10e08e2605"/>
+		<Metadata name="Report.МГС_ОтчетПоВыпускуБаллонов.Form.ФормаСсылка.Form" id="4d7c48c5-7107-42ac-b542-16ccdd05c6b9.0" configVersion="a54cbd1c951f2ede691b99ec9283fee5dc814ccd"/>
+		<Metadata name="Report.МГС_ОтчетПоВыпускуБаллонов.ObjectModule" id="19ee7906-11c9-4b17-ab7c-8348e52f7723.0" configVersion="4e1edcc482884385d5d7557db172ef7444912e33"/>
+		<Metadata name="Report.МГС_ОтчетПоВыпускуБаллонов.Template.ОсновнаяСхемаКомпоновкиДанных" id="3b371517-ed7d-4f0c-8198-a142e037bd56" configVersion="397f0f2b210f45f6e8561ac249515806010ecf43"/>
+		<Metadata name="Report.МГС_ОтчетПоВыпускуБаллонов.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="3b371517-ed7d-4f0c-8198-a142e037bd56.0" configVersion="240ad4e0d617e29368b7dfbe5232fc5e415f9506"/>
+		<Metadata name="Report.МГС_ОтчетПоОтгрузкеБаллонов" id="0e2e89c2-6d04-4be2-a9d9-75dda3277eb7" configVersion="1146dc58136fce327522895ea3316bcce51e2d36"/>
+		<Metadata name="Report.МГС_ОтчетПоОтгрузкеБаллонов.Form.ФормаОтчета" id="38512550-6052-4a25-ab36-781ac0fd0493" configVersion="aaf82608cbddbd951da0033ed83d501e75742950"/>
+		<Metadata name="Report.МГС_ОтчетПоОтгрузкеБаллонов.Form.ФормаОтчета.Form" id="38512550-6052-4a25-ab36-781ac0fd0493.0" configVersion="83d2ac4a63e47455b8445c6c30eaabb3e9a2d62a"/>
+		<Metadata name="Report.МГС_ОтчетПоОтгрузкеБаллонов.Template.ОсновнаяСхемаКомпоновкиДанных" id="1ef48625-7d1e-426b-b37e-42e1e6dc8b51" configVersion="4e79749eef6190057ea594a68c8ce75cf55e8ff3"/>
+		<Metadata name="Report.МГС_ОтчетПоОтгрузкеБаллонов.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="1ef48625-7d1e-426b-b37e-42e1e6dc8b51.0" configVersion="b9078e13aa3bed9eccf8387b67d8f7389fdc4eb8"/>
+		<Metadata name="Report.МГС_ОтчетПоПросроченнымБаллоновУКонтрагентов" id="7b63c069-ab5d-48ba-9b3c-f35ab7796d50" configVersion="7c3a62a1d82b4639e82e737ccc28559943a85fbc"/>
+		<Metadata name="Report.МГС_ОтчетПоПросроченнымБаллоновУКонтрагентов.Form.ФормаОтчета" id="01085444-fac0-4eac-a3bf-cd3e80363317" configVersion="6b5ff85c117a1267542b833cc3a5d16cfd348374"/>
+		<Metadata name="Report.МГС_ОтчетПоПросроченнымБаллоновУКонтрагентов.Form.ФормаОтчета.Form" id="01085444-fac0-4eac-a3bf-cd3e80363317.0" configVersion="57a972f886ee50a798f0ade519538fcaed60fa90"/>
+		<Metadata name="Report.МГС_ОтчетПоПросроченнымБаллоновУКонтрагентов.ObjectModule" id="7b63c069-ab5d-48ba-9b3c-f35ab7796d50.0" configVersion="6976844ed62b279eaff241f644a9afb5e8057c19"/>
+		<Metadata name="Report.МГС_ОтчетПоПросроченнымБаллоновУКонтрагентов.Template.ОсновнаяСхемаКомпоновкиДанных" id="d72695c1-1d64-46a0-87c6-4bb31d833eae" configVersion="381ad2ec87890fbc5cfd92a066b6082c8141d105"/>
+		<Metadata name="Report.МГС_ОтчетПоПросроченнымБаллоновУКонтрагентов.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="d72695c1-1d64-46a0-87c6-4bb31d833eae.0" configVersion="33b2ee87e81a89b0e6e8e49ed9ee3e472ddbd1d2"/>
+		<Metadata name="Report.МГС_ОтчетПоТареУКонтрагентов" id="eeac2033-c767-442c-97ee-59c50c075806" configVersion="fcc85aa98be12a419248198564d0b93f5b2a6713"/>
+		<Metadata name="Report.МГС_ОтчетПоТареУКонтрагентов.Form.ФормаОтчета" id="1229b88d-7bc4-4af9-9e2c-a031a83211df" configVersion="74386c7905931200535c40220e1ead1225c84bbc"/>
+		<Metadata name="Report.МГС_ОтчетПоТареУКонтрагентов.Form.ФормаОтчета.Form" id="1229b88d-7bc4-4af9-9e2c-a031a83211df.0" configVersion="ad58059235bb6244c1cb09af8d8c89968b884289"/>
+		<Metadata name="Report.МГС_ОтчетПоТареУКонтрагентов.ObjectModule" id="eeac2033-c767-442c-97ee-59c50c075806.0" configVersion="4924f038f73fe3deb07f22119ebb2bda4d2a911a"/>
+		<Metadata name="Report.МГС_ОтчетПоТареУКонтрагентов.Template.ОсновнаяСхемаКомпоновкиДанных" id="cea366cd-0dbc-4bf0-b02d-13d09a715d80" configVersion="e4262e661501d1e234ea624f5bcc5c8b6c5e9447"/>
+		<Metadata name="Report.МГС_ОтчетПоТареУКонтрагентов.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="cea366cd-0dbc-4bf0-b02d-13d09a715d80.0" configVersion="b28187a4522c9e7f36dedc4fa4c0052e55e603a6"/>
+		<Metadata name="Subsystem.МГС_УчетБаллонов" id="59794ef2-dd71-468c-9bd1-65ea0ebed267" configVersion="e02548b8b5acaca2bc18eb8a9511afb2d2bd3797"/>
+	</ConfigVersions>
+</ConfigDumpInfo>

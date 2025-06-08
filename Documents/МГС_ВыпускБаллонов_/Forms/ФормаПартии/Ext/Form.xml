@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Width>98</Width>
+	<Height>50</Height>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<ScalingMode>Compact</ScalingMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="НомерПартии" id="35">
+			<DataPath>НомерПартии</DataPath>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<ContextMenu name="НомерПартииКонтекстноеМеню" id="36"/>
+			<ExtendedTooltip name="НомерПартииРасширеннаяПодсказка" id="37"/>
+		</InputField>
+		<InputField name="ТипБаллона" id="45">
+			<DataPath>ТипБаллона</DataPath>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<ContextMenu name="ТипБаллонаКонтекстноеМеню" id="46"/>
+			<ExtendedTooltip name="ТипБаллонаРасширеннаяПодсказка" id="47"/>
+		</InputField>
+		<UsualGroup name="Группа2" id="65">
+			<Group>AlwaysHorizontal</Group>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="66"/>
+			<ChildItems>
+				<Table name="Баллоны" id="1">
+					<Representation>List</Representation>
+					<Height>10</Height>
+					<AutoMaxRowsCount>false</AutoMaxRowsCount>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Баллоны</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="БаллоныКонтекстноеМеню" id="2"/>
+					<AutoCommandBar name="БаллоныКоманднаяПанель" id="3"/>
+					<ExtendedTooltip name="БаллоныРасширеннаяПодсказка" id="4"/>
+					<SearchStringAddition name="БаллоныСтрокаПоиска" id="5">
+						<AdditionSource>
+							<Item>Баллоны</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="БаллоныСтрокаПоискаКонтекстноеМеню" id="6"/>
+						<ExtendedTooltip name="БаллоныСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="БаллоныСостояниеПросмотра" id="8">
+						<AdditionSource>
+							<Item>Баллоны</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="БаллоныСостояниеПросмотраКонтекстноеМеню" id="9"/>
+						<ExtendedTooltip name="БаллоныСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="БаллоныУправлениеПоиском" id="11">
+						<AdditionSource>
+							<Item>Баллоны</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="БаллоныУправлениеПоискомКонтекстноеМеню" id="12"/>
+						<ExtendedTooltip name="БаллоныУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="BeforeAddRow">БаллоныПередНачаломДобавления</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="БаллоныНомерСтроки" id="59">
+							<DataPath>Баллоны.НомерСтроки</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="БаллоныНомерСтрокиКонтекстноеМеню" id="60"/>
+							<ExtendedTooltip name="БаллоныНомерСтрокиРасширеннаяПодсказка" id="61"/>
+						</InputField>
+						<InputField name="БаллоныБаллон" id="14">
+							<DataPath>Баллоны.Баллон</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>24</Width>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<IncompleteChoiceMode>OnActivate</IncompleteChoiceMode>
+							<ChoiceParameterLinks>
+								<xr:Link>
+									<xr:Name>Отбор.ТипБаллона</xr:Name>
+									<xr:DataPath xsi:type="xs:string">ТипБаллона</xr:DataPath>
+									<xr:ValueChange>Clear</xr:ValueChange>
+								</xr:Link>
+							</ChoiceParameterLinks>
+							<ContextMenu name="БаллоныБаллонКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="БаллоныБаллонРасширеннаяПодсказка" id="16"/>
+							<Events>
+								<Event name="OnChange">БаллоныБаллонПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="БаллоныВес" id="17">
+							<DataPath>Баллоны.Вес</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ContextMenu name="БаллоныВесКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="БаллоныВесРасширеннаяПодсказка" id="19"/>
+						</InputField>
+						<LabelField name="БаллоныБаллонЗаводскойНомер" id="23">
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="БаллоныБаллонЗаводскойНомерКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="БаллоныБаллонЗаводскойНомерРасширеннаяПодсказка" id="25"/>
+						</LabelField>
+						<InputField name="БаллоныБаллонДатаИзготовления" id="53">
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="БаллоныБаллонДатаИзготовленияКонтекстноеМеню" id="54"/>
+							<ExtendedTooltip name="БаллоныБаллонДатаИзготовленияРасширеннаяПодсказка" id="55"/>
+						</InputField>
+						<InputField name="БаллоныДатаАттестации" id="38">
+							<DataPath>Баллоны.ДатаАттестации</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="БаллоныДатаАттестацииКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="БаллоныДатаАттестацииРасширеннаяПодсказка" id="40"/>
+						</InputField>
+						<LabelField name="БаллоныБаллонТипБаллонаВесТары" id="26">
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="БаллоныБаллонТипБаллонаВесТарыКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="БаллоныБаллонТипБаллонаВесТарыРасширеннаяПодсказка" id="28"/>
+						</LabelField>
+						<LabelField name="БаллоныБаллонТипБаллона" id="20">
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="БаллоныБаллонТипБаллонаКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="БаллоныБаллонТипБаллонаРасширеннаяПодсказка" id="22"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="Группа3" id="70">
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="71"/>
+					<ChildItems>
+						<RadioButtonField name="Колпак" id="62">
+							<DataPath>Колпак</DataPath>
+							<RadioButtonType>RadioButtons</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>металлический</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>пластиковый</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="КолпакКонтекстноеМеню" id="63"/>
+							<ExtendedTooltip name="КолпакРасширеннаяПодсказка" id="64"/>
+						</RadioButtonField>
+						<RadioButtonField name="Кольца" id="67">
+							<DataPath>Кольца</DataPath>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ColumnsCount>1</ColumnsCount>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>с кольцами</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>без колец</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="КольцаКонтекстноеМеню" id="68"/>
+							<ExtendedTooltip name="КольцаРасширеннаяПодсказка" id="69"/>
+						</RadioButtonField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ОтветственныйЗаПартию" id="50">
+			<DataPath>ОтветственныйЗаПартию</DataPath>
+			<ContextMenu name="ОтветственныйЗаПартиюКонтекстноеМеню" id="51"/>
+			<ExtendedTooltip name="ОтветственныйЗаПартиюРасширеннаяПодсказка" id="52"/>
+		</InputField>
+		<Button name="ЗакрытьПартию" id="48">
+			<Type>UsualButton</Type>
+			<Visible>false</Visible>
+			<CommandName>Form.Command.ЗакрытьПартию</CommandName>
+			<ExtendedTooltip name="ЗакрытьПартиюРасширеннаяПодсказка" id="49"/>
+		</Button>
+		<UsualGroup name="Группа1" id="33">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<Button name="ОК" id="41">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОК</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Записать</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ОКРасширеннаяПодсказка" id="42"/>
+				</Button>
+				<Button name="Отмена" id="43">
+					<Type>UsualButton</Type>
+					<CommandName>Form.StandardCommand.Cancel</CommandName>
+					<ExtendedTooltip name="ОтменаРасширеннаяПодсказка" id="44"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Баллоны" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Баллоны</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Баллон" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Баллон</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Вес" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вес</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>1</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаАттестации" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата аттестации</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерСтроки" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер строки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="НомерПартии" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер партии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Закрыта" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПеренестиВДокумент" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести в документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипБаллона" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип баллона</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипВыпуска" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип выпуска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтветственныйЗаПартию" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответственный за партию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Колпак" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Колпак</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Кольца" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кольца</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОК</Action>
+		</Command>
+		<Command name="ЗакрытьПартию" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть партию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть партию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗакрытьПартию</Action>
+		</Command>
+	</Commands>
+</Form>

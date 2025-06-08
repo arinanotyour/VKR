@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<CommandSet>
+		<ExcludedCommand>Delete</ExcludedCommand>
+	</CommandSet>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ОтгрузкаБаллонов" id="34">
+			<DataPath>Объект.ОтгрузкаБаллонов</DataPath>
+			<SkipOnInput>true</SkipOnInput>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОтгрузкаБаллоновКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ОтгрузкаБаллоновРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<UsualGroup name="Тара" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тара</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тара</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Collapsible</Behavior>
+			<ExtendedTooltip name="ТараРасширеннаяПодсказка" id="50"/>
+			<ChildItems>
+				<InputField name="ДатаВозвратаТары" id="60">
+					<DataPath>Объект.ДатаВозвратаТары</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="ДатаВозвратаТарыКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="ДатаВозвратаТарыРасширеннаяПодсказка" id="62"/>
+				</InputField>
+				<InputField name="ЩитДеревянныйКоличество" id="57">
+					<DataPath>Объект.ЩитДеревянныйКоличество</DataPath>
+					<ContextMenu name="ЩитДеревянныйКоличествоКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="ЩитДеревянныйКоличествоРасширеннаяПодсказка" id="59"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ОтгрузкаЖД" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отгрузка ЖД</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отгрузка ЖД</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ОтгрузкаЖДРасширеннаяПодсказка" id="64"/>
+			<ChildItems>
+				<InputField name="Контейнер" id="7">
+					<DataPath>Объект.Контейнер</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КонтейнерКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="КонтейнерРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<UsualGroup name="Группа1" id="37">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="38"/>
+					<ChildItems>
+						<InputField name="КодВладельцаКонтейнера" id="10">
+							<DataPath>Объект.КодВладельцаКонтейнера</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КодВладельцаКонтейнераКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="КодВладельцаКонтейнераРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="НомерКонтейнера" id="13">
+							<DataPath>Объект.НомерКонтейнера</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НомерКонтейнераКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="НомерКонтейнераРасширеннаяПодсказка" id="15"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="НомерПломбы" id="16">
+					<DataPath>Объект.НомерПломбы</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерПломбыКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="НомерПломбыРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<UsualGroup name="КодыПлательщика" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Коды плательщика</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Коды плательщика</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="КодыПлательщикаРасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<InputField name="КодПлательщика12" id="19">
+							<DataPath>Объект.КодПлательщика12</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>12-зн</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КодПлательщика12КонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="КодПлательщика12РасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<InputField name="КодПлательщика7" id="22">
+							<DataPath>Объект.КодПлательщика7</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>7-зн</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КодПлательщика7КонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="КодПлательщика7РасширеннаяПодсказка" id="24"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Оттиск" id="41">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оттиск</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оттиск</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="ОттискРасширеннаяПодсказка" id="42"/>
+					<ChildItems>
+						<InputField name="НомерОттиска" id="28">
+							<DataPath>Объект.НомерОттиска</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НомерОттискаКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="НомерОттискаРасширеннаяПодсказка" id="30"/>
+						</InputField>
+						<InputField name="ВидОттиска" id="43">
+							<DataPath>Объект.ВидОттиска</DataPath>
+							<ContextMenu name="ВидОттискаКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="ВидОттискаРасширеннаяПодсказка" id="45"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="Грузополучатель" id="31">
+					<DataPath>Объект.Грузополучатель</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ГрузополучательКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ГрузополучательРасширеннаяПодсказка" id="33"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Ответственный" id="46">
+			<DataPath>Объект.Ответственный</DataPath>
+			<ContextMenu name="ОтветственныйКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="48"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.МГС_НакладнаяЖелезнодорожнымТранспортом_</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

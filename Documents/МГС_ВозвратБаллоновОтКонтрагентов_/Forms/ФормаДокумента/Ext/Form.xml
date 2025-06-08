@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<CommandBarLocation>Top</CommandBarLocation>
+	<CommandSet>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>Post</ExcludedCommand>
+	</CommandSet>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1" DisplayImportance="Usual">
+		<ChildItems>
+			<Popup name="ПодменюПечать" id="549">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Печать</v8:content>
+					</v8:item>
+				</Title>
+				<Picture>
+					<xr:Ref>StdPicture.Print</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Representation>PictureAndText</Representation>
+				<ExtendedTooltip name="ПодменюПечатьРасширеннаяПодсказка" id="550"/>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ДатаНомер" id="68">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата номер</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ДатаНомерРасширеннаяПодсказка" id="69"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="OnChange">ДатаПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Контрагент" id="628">
+			<DataPath>Объект.Контрагент</DataPath>
+			<ContextMenu name="КонтрагентКонтекстноеМеню" id="629"/>
+			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="630"/>
+		</InputField>
+		<InputField name="Организация" id="70">
+			<DataPath>Объект.Организация</DataPath>
+			<Visible>false</Visible>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="71"/>
+			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="72"/>
+		</InputField>
+		<UsualGroup name="Номера" id="634">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номера</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номера</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="НомераРасширеннаяПодсказка" id="635"/>
+			<ChildItems>
+				<InputField name="НомерЖД" id="636">
+					<DataPath>Объект.НомерЖД</DataPath>
+					<Width>20</Width>
+					<ContextMenu name="НомерЖДКонтекстноеМеню" id="637"/>
+					<ExtendedTooltip name="НомерЖДРасширеннаяПодсказка" id="638"/>
+				</InputField>
+				<InputField name="НомерАМ" id="639">
+					<DataPath>Объект.НомерАМ</DataPath>
+					<Width>20</Width>
+					<ContextMenu name="НомерАМКонтекстноеМеню" id="640"/>
+					<ExtendedTooltip name="НомерАМРасширеннаяПодсказка" id="641"/>
+				</InputField>
+				<InputField name="НомерКонтейнера" id="642">
+					<DataPath>Объект.НомерКонтейнера</DataPath>
+					<ContextMenu name="НомерКонтейнераКонтекстноеМеню" id="643"/>
+					<ExtendedTooltip name="НомерКонтейнераРасширеннаяПодсказка" id="644"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ДокументыОтгрузки" id="655">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ДокументыОтгрузки</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДокументыОтгрузкиКонтекстноеМеню" id="656"/>
+			<AutoCommandBar name="ДокументыОтгрузкиКоманднаяПанель" id="657">
+				<ChildItems>
+					<Button name="Заполнить" id="680">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Заполнить</CommandName>
+						<ExtendedTooltip name="ЗаполнитьРасширеннаяПодсказка" id="681"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДокументыОтгрузкиРасширеннаяПодсказка" id="658"/>
+			<SearchStringAddition name="ДокументыОтгрузкиСтрокаПоиска" id="659">
+				<AdditionSource>
+					<Item>ДокументыОтгрузки</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДокументыОтгрузкиСтрокаПоискаКонтекстноеМеню" id="660"/>
+				<ExtendedTooltip name="ДокументыОтгрузкиСтрокаПоискаРасширеннаяПодсказка" id="661"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДокументыОтгрузкиСостояниеПросмотра" id="662">
+				<AdditionSource>
+					<Item>ДокументыОтгрузки</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДокументыОтгрузкиСостояниеПросмотраКонтекстноеМеню" id="663"/>
+				<ExtendedTooltip name="ДокументыОтгрузкиСостояниеПросмотраРасширеннаяПодсказка" id="664"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДокументыОтгрузкиУправлениеПоиском" id="665">
+				<AdditionSource>
+					<Item>ДокументыОтгрузки</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДокументыОтгрузкиУправлениеПоискомКонтекстноеМеню" id="666"/>
+				<ExtendedTooltip name="ДокументыОтгрузкиУправлениеПоискомРасширеннаяПодсказка" id="667"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ДокументыОтгрузкиНомерСтроки" id="668">
+					<DataPath>Объект.ДокументыОтгрузки.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДокументыОтгрузкиНомерСтрокиКонтекстноеМеню" id="669"/>
+					<ExtendedTooltip name="ДокументыОтгрузкиНомерСтрокиРасширеннаяПодсказка" id="670"/>
+				</LabelField>
+				<InputField name="ДокументыОтгрузкиДокументОтгрузки" id="671">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДокументыОтгрузкиДокументОтгрузкиКонтекстноеМеню" id="672"/>
+					<ExtendedTooltip name="ДокументыОтгрузкиДокументОтгрузкиРасширеннаяПодсказка" id="673"/>
+					<Events>
+						<Event name="OnChange">ДокументыОтгрузкиДокументОтгрузкиПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ДокументыОтгрузкиНоменклатура" id="674">
+					<DataPath>Объект.ДокументыОтгрузки.ТипБаллона</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДокументыОтгрузкиНоменклатураКонтекстноеМеню" id="675"/>
+					<ExtendedTooltip name="ДокументыОтгрузкиНоменклатураРасширеннаяПодсказка" id="676"/>
+				</InputField>
+				<InputField name="ДокументыОтгрузкиКоличество" id="677">
+					<DataPath>Объект.ДокументыОтгрузки.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДокументыОтгрузкиКоличествоКонтекстноеМеню" id="678"/>
+					<ExtendedTooltip name="ДокументыОтгрузкиКоличествоРасширеннаяПодсказка" id="679"/>
+				</InputField>
+				<InputField name="ДокументыОтгрузкиЧислятсяПоОтправочнымДокументам" id="682">
+					<DataPath>Объект.ДокументыОтгрузки.ЧислятсяПоОтправочнымДокументам</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДокументыОтгрузкиЧислятсяПоОтправочнымДокументамКонтекстноеМеню" id="683"/>
+					<ExtendedTooltip name="ДокументыОтгрузкиЧислятсяПоОтправочнымДокументамРасширеннаяПодсказка" id="684"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="Подписи" id="645">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Collapsible</Behavior>
+			<ExtendedTooltip name="ПодписиРасширеннаяПодсказка" id="646"/>
+			<ChildItems>
+				<InputField name="Мастер" id="647">
+					<DataPath>Объект.Мастер</DataPath>
+					<ContextMenu name="МастерКонтекстноеМеню" id="648"/>
+					<ExtendedTooltip name="МастерРасширеннаяПодсказка" id="649"/>
+				</InputField>
+				<InputField name="Приемосдатчик1" id="650">
+					<DataPath>Объект.Приемосдатчик1</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приемосдатчик</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="Приемосдатчик1КонтекстноеМеню" id="651"/>
+					<ExtendedTooltip name="Приемосдатчик1РасширеннаяПодсказка" id="652"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКомментарийОтветственный" id="196">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа комментарий ответственный</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКомментарийОтветственныйРасширеннаяПодсказка" id="197"/>
+			<ChildItems>
+				<InputField name="Ответственный" id="201">
+					<DataPath>Объект.Ответственный</DataPath>
+					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="202"/>
+					<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="203"/>
+				</InputField>
+				<InputField name="Комментарий" id="198">
+					<DataPath>Объект.Комментарий</DataPath>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="199"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="200"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.МГС_ВозвратБаллоновОтКонтрагентов_</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Заполнить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Заполнить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

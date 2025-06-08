@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<CommandBarLocation>Top</CommandBarLocation>
+	<CommandSet>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>Post</ExcludedCommand>
+	</CommandSet>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1" DisplayImportance="Usual">
+		<ChildItems>
+			<Popup name="ПодменюПечать" id="549">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Печать</v8:content>
+					</v8:item>
+				</Title>
+				<Picture>
+					<xr:Ref>StdPicture.Print</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Representation>PictureAndText</Representation>
+				<ExtendedTooltip name="ПодменюПечатьРасширеннаяПодсказка" id="550"/>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ДатаНомер" id="68">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата номер</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ДатаНомерРасширеннаяПодсказка" id="69"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="OnChange">ДатаПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Организация" id="70">
+			<DataPath>Объект.Организация</DataPath>
+			<Visible>false</Visible>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="71"/>
+			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="72"/>
+		</InputField>
+		<Table name="Баллоны" id="606">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Баллоны</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="БаллоныКонтекстноеМеню" id="607"/>
+			<AutoCommandBar name="БаллоныКоманднаяПанель" id="608"/>
+			<ExtendedTooltip name="БаллоныРасширеннаяПодсказка" id="609"/>
+			<SearchStringAddition name="БаллоныСтрокаПоиска" id="610">
+				<AdditionSource>
+					<Item>Баллоны</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="БаллоныСтрокаПоискаКонтекстноеМеню" id="611"/>
+				<ExtendedTooltip name="БаллоныСтрокаПоискаРасширеннаяПодсказка" id="612"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="БаллоныСостояниеПросмотра" id="613">
+				<AdditionSource>
+					<Item>Баллоны</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="БаллоныСостояниеПросмотраКонтекстноеМеню" id="614"/>
+				<ExtendedTooltip name="БаллоныСостояниеПросмотраРасширеннаяПодсказка" id="615"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="БаллоныУправлениеПоиском" id="616">
+				<AdditionSource>
+					<Item>Баллоны</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="БаллоныУправлениеПоискомКонтекстноеМеню" id="617"/>
+				<ExtendedTooltip name="БаллоныУправлениеПоискомРасширеннаяПодсказка" id="618"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="БаллоныНомерСтроки" id="619">
+					<DataPath>Объект.Баллоны.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="БаллоныНомерСтрокиКонтекстноеМеню" id="620"/>
+					<ExtendedTooltip name="БаллоныНомерСтрокиРасширеннаяПодсказка" id="621"/>
+				</LabelField>
+				<InputField name="БаллоныБаллон" id="622">
+					<DataPath>Объект.Баллоны.Баллон</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>false</ChoiceButton>
+					<CreateButton>false</CreateButton>
+					<ContextMenu name="БаллоныБаллонКонтекстноеМеню" id="623"/>
+					<ExtendedTooltip name="БаллоныБаллонРасширеннаяПодсказка" id="624"/>
+					<Events>
+						<Event name="EditTextChange">БаллоныБаллонИзменениеТекстаРедактирования</Event>
+						<Event name="AutoComplete">БаллоныБаллонАвтоПодбор</Event>
+						<Event name="TextEditEnd">БаллоныБаллонОкончаниеВводаТекста</Event>
+					</Events>
+				</InputField>
+				<LabelField name="БаллоныБаллонТипБаллона" id="625">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="БаллоныБаллонТипБаллонаКонтекстноеМеню" id="626"/>
+					<ExtendedTooltip name="БаллоныБаллонТипБаллонаРасширеннаяПодсказка" id="627"/>
+				</LabelField>
+				<LabelField name="БаллоныБаллонВесТары" id="631">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="БаллоныБаллонВесТарыКонтекстноеМеню" id="632"/>
+					<ExtendedTooltip name="БаллоныБаллонВесТарыРасширеннаяПодсказка" id="633"/>
+				</LabelField>
+				<LabelField name="БаллоныПоле1" id="634">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="БаллоныПоле1КонтекстноеМеню" id="635"/>
+					<ExtendedTooltip name="БаллоныПоле1РасширеннаяПодсказка" id="636"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаКомментарийОтветственный" id="196">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа комментарий ответственный</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКомментарийОтветственныйРасширеннаяПодсказка" id="197"/>
+			<ChildItems>
+				<InputField name="Ответственный" id="201">
+					<DataPath>Объект.Ответственный</DataPath>
+					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="202"/>
+					<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="203"/>
+				</InputField>
+				<InputField name="Комментарий" id="198">
+					<DataPath>Объект.Комментарий</DataPath>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="199"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="200"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.МГС_ГидроиспытаниеБаллонов_</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>
